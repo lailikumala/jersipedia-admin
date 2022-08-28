@@ -53,7 +53,6 @@ const TambahLiga = () => {
         icon: "error",
         confirmButtonText: "OK",
       })
-      // swal("Failed!", "Maaf Nama Liga dan Logo Liga harus diisi", "error");
     }
   };
   

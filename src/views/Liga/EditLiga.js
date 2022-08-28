@@ -65,7 +65,6 @@ const EditLiga = (props) => {
         icon: "error",
         confirmButtonText: "OK",
       })
-      // swal("Failed!", "Maaf Nama Liga harus diisi", "error");
     }
   };
 
