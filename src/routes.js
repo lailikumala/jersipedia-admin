@@ -18,9 +18,12 @@
 */
 import { 
   Dashboard,
+  EditJersey,
   EditLiga,
   Icons,
+  ListJersey,
   ListLiga,
+  TambahJersey,
   TambahLiga,
 } from "./views";
 
@@ -53,6 +56,28 @@ var routes = [
     path: "/liga/edit/:id",
     name: "Edit Liga",
     component: EditLiga,
+    layout: "/admin",
+    sidebar: false,
+  },
+  {
+    path: "/jersey",
+    name: "Master Jersey",
+    icon: "nc-icon nc-cart-simple",
+    component: ListJersey,
+    layout: "/admin",
+    sidebar: true,
+  },
+  {
+    path: "/jersey/tambah",
+    name: "Tambah Jersey",
+    component: TambahJersey,
+    layout: "/admin",
+    sidebar: false,
+  },
+  {
+    path: "/jersey/edit/:id",
+    name: "Edit Jersey",
+    component: EditJersey,
     layout: "/admin",
     sidebar: false,
   },
