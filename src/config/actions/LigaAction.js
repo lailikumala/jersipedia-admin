@@ -43,9 +43,9 @@ export const getDetailLiga = (id) => dispatch => {
 };
 
 export const tambahLiga = (data, history) => dispatch => {
+  console.log("input ligaaa", data)
   //loading
     dispatchLoading(dispatch, TAMBAH_LIGA);
-
     //upload ke storage firebase
     var uploadTask = FIREBASE.storage()
       .ref("ligas")
